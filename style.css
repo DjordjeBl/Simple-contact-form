@@ -140,3 +140,7 @@ body {
     font-weight: 500;
     font-size: 30px;
 }
+
+.modal-window .modal-box p {
+  margin: 5px 0 5px 0;
+}
