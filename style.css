@@ -13,16 +13,14 @@ body {
     width: 600px;
     margin: 100px auto;
     position: relative;
-}
-
-#contact-form {
-    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc;
 }
 
 #contact-form h1 {
     text-align: center;
-    margin: 0;
     margin-bottom: 20px;
+    margin-top: 10px;
     margin-right: 35px;
 }
 
