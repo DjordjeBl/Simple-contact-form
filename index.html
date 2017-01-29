@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple contact form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="overlay">
+    </div>
+    <form id="contact-form" method="post" action="form.php">
+        <fieldset>
+            <h1>Simple Contact Form</h1>
+            <div id="response"></div>
+            <!-- text input -->
+            <div class="form-group">
+                <div class="container">
+                    <div class="row">
+                        <label for="Name:" class="col-md-4">Name: </label>
+                        <div class="col-md-4">
+                            <input type="text" id="name" placeholder="Enter name" class="form-control input-md" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- text input -->
+            <div class="form-group">
+                <div class="container">
+                    <div class="row">
+                        <label for="Email:" class="col-md-4">Email: </label>
+                        <div class="col-md-4">
+                            <input type="text" id="email" placeholder="Enter email" class="form-control input-md" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- password input -->
+            <div class="form-group">
+                <div class="container">
+                    <div class="row">
+                        <label for="Password:" class="col-md-4">Password: </label>
+                        <div class="col-md-4">
+                            <input type="password" id="password" placeholder="Enter password" class="form-control input-md" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- checkbox -->
+            <div class="form-group">
+                <input type="checkbox" id="checkbox" />
+                <span>Remember me</span>
+            </div>
+            <div class="form-group">
+                <button class="button">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <!-- modal window -->
+    <div class="modal-window">
+        <div class="parent">
+            <h2>Simple Contact Form</h2>
+            <span class="glyphicon glyphicon-remove"></span>
+        </div>
+        <div class="modal-box">
+            <p>Your Name: <span class="name"></span></p>
+            <p>Your Email: <span class="email"></span></p>
+            <p>Your Password: <span class="password"></span></p>
+            <p>Remember Me: <span class="remember-me"></span></p>
+        </div>
+        <div class="modal-btn">
+            <button class="close-btn">Close</button>
+            <button class="save-btn">Save changes</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
